@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE configuration
+ 		 PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+ 		"http://mybatis.org/dtd/mybatis-3-config.dtd">
+  						
+<configuration>
+
+	<settings>
+		<setting name="callSettersOnNulls" value="false"/>
+	</settings>	
+	
+	<typeAliases>
+		<!-- 
+		<typeAlias alias="boardVO" type="com.sample.choc2.service.domain.BoardVO" />
+		<typeAlias alias="replyVO" type="com.sample.choc2.service.domain.ReplyVO" /> -->
+		
+	</typeAliases>
+	
+	<mappers>
+		<!-- <mapper resource="sql/LogMapper.xml"/>
+		<mapper resource="sql/BoardMapper.xml"/>
+		<mapper resource="sql/ReplyMapper.xml"/>
+		<mapper resource="sql/CommonMapper.xml" />
+		<mapper resource="sql/ProductMapper.xml" />
+		<mapper resource="sql/QnaBoardMapper.xml" /> -->
+		<!-- <mapper resource="sql/UserMapper.xml"/>		 -->
+	</mappers>
+
+</configuration>
