@@ -11,7 +11,7 @@
 	      		ㅇ Factory Pattern  적용 :: Spring 의 FactoryBean interface 구현 -->
 	<bean id="sqlSessionFactoryBean" 
 			class="org.mybatis.spring.SqlSessionFactoryBean" >
-		<property name="dataSource" ref="dataSource-oracle"/>
+		<property name="dataSource" ref="dataSource-mysql"/>
 		<property name="configLocation" value="classpath:sql/mybatis-config.xml"/>
 	</bean>
 	

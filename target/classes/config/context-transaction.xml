@@ -13,15 +13,16 @@
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
 		
-	<bean id="dataSource-oracle" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
-        <property name="driverClassName" value="${ORACLE.DRIVERCLASS}"/>
-        <property name="url" value="${ORACLE.URL}" />
-        <property name="username" value="${ORACLE.USERNAME}"/>
-        <property name="password" value="${ORACLE.PASSWORD}"/>
+    <bean id="dataSource-mysql" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="${MYSQL.DRIVERCLASS}"/>
+        <property name="url" value="${MYSQL.URL}" />
+        <property name="username" value="${MYSQL.USERNAME}"/>
+        <property name="password" value="${MYSQL.PASSWORD}"/>
         <property name="maxActive" value="30" />
 		<property name="maxIdle" value="30" />
 		<property name="maxWait" value="1000" />
     </bean>
+
 		
 		
 </beans>
