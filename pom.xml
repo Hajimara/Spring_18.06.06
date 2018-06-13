@@ -93,11 +93,11 @@
 			<version>0.1.10</version>
 		</dependency>
 		<!-- 오라클 JDBC 드라이버 -->
-		<dependency>
+		<!-- <dependency>
 		    <groupId>com.oracle</groupId>
 		    <artifactId>ojdbc6</artifactId>
 		    <version>12.1.0.2</version>
-		</dependency>
+		</dependency> -->
 		<!-- Logging -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -333,10 +333,10 @@
 			<url>https://jitpack.io</url>
 		</repository>
 	<!-- sujin 18/06/06 oracle jdbc 가져오기 위함  -->
-		<repository>
+		<!-- <repository>
    			<id>oracle</id>
    			<url>http://maven.jahia.org/maven2</url>
-  		</repository>
+  		</repository> -->
 	</repositories>
 	
     <build>
