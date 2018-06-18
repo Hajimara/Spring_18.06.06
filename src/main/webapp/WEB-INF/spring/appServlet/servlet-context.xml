@@ -22,14 +22,24 @@
 	</beans:bean>
 	
 	<context:component-scan base-package="org.yogiyo.app" />
-	<!-- <context:component-scan base-package="org.web.skinpick.web">
+	<context:component-scan base-package="org.yogiyo.app.web">
 		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller" />
 		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Service" />
 		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Repository" />
 	</context:component-scan>
 	
 	
-	<beans:bean id="loginCheckInterceptor" class="org.web.skinpick.common.interceptor.LoginCheckInterceptor" />
+	<beans:bean id="loginCheckInterceptor" class="org.yogiyo.app.common.interceptor.LoginCheckInterceptor" />
+	
+	<interceptors>
+		
+   		<interceptor>
+			<mapping path=""/>
+			<beans:ref bean="loginCheckInterceptor"/>
+   		</interceptor>
+   	
+   	</interceptors>
+	<!--  
 	<beans:bean id="authInterceptor" class="org.web.skinpick.common.interceptor.AuthInterceptor" />
 	<interceptors>
 		

@@ -14,6 +14,7 @@
 		<!-- 
 		<typeAlias alias="boardVO" type="com.sample.choc2.service.domain.BoardVO" />
 		<typeAlias alias="replyVO" type="com.sample.choc2.service.domain.ReplyVO" /> -->
+		<typeAlias alias="userVO" type="org.yogiyo.app.service.domain.UserVO" />
 		
 	</typeAliases>
 	
@@ -24,7 +25,7 @@
 		<mapper resource="sql/CommonMapper.xml" />
 		<mapper resource="sql/ProductMapper.xml" />
 		<mapper resource="sql/QnaBoardMapper.xml" /> -->
-		<!-- <mapper resource="sql/UserMapper.xml"/>		 -->
+		<mapper resource="sql/UserMapper.xml"/>		 
 	</mappers>
 
 </configuration>
